@@ -1,7 +1,7 @@
 ### olá!! Eu sou o Gabriel Marques 
 
 - 🔭 Atualmente estou cursando Sistemas da informção
-- 🌱 Aprendendo Javascript
+- 🌱 Aprendendo Javascript/Java
 - 😄 Pronouns: Ele/Dele
 
   <div style="display: inline_block"><br>
