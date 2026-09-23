@@ -192,32 +192,6 @@ engineering:
 
 <div align="center">
 
-  <!-- CTF Machine Hall of Fame -->
-  <h3>🏆 CTF Hall of Fame — Máquinas Comprometidas</h3>
-
-  | Alvo | Plataforma | Vetor Inicial | Escalada (Root) | Status |
-  | :--- | :---: | :--- | :--- | :---: |
-  | **Cyber-News** | Hacking Club | BOPLA + Mass Assignment + BOLA | Docker Socket SSRF & Escape | `🟢 ROOTED` |
-  | **Retro** | Hacking Club | OTP Bypass + IDOR + Command Injection | ROM Directory Hijacking | `🟢 ROOTED` |
-  | **Poisoning** | Hacking Club | LFI + Apache Log Poisoning (RCE) | `cap_setuid` Capability Abuse | `🟢 ROOTED` |
-  | **Lion** | Hacking Club | SQLi UNION-based + `INTO OUTFILE` | Crontab Privilege Escalation | `🟢 ROOTED` |
-  | **Calc** | Hacking Club | PHP `eval()` Command Injection | Python Library Module Hijacking | `🟢 ROOTED` |
-  | **Laravel-Time** | Hacking Club | Time-Based Blind SQLi + `LOAD_FILE` | SMB Credential Reuse & Cron | `🟢 ROOTED` |
-
-</div>
-
-<br/>
-
----
-
-<div align="center">
-
-  <!-- Animated Contribution Snake -->
-  <h3>🐍 Snake Eat Contributions</h3>
-  <img src="https://raw.githubusercontent.com/GabrielMarques1/GabrielMarques1/main/dist/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
-
-  <br/><br/>
-
   <!-- Footer Connect -->
   <p>
     <b>Vamos trocar uma ideia ou colaborar em um projeto?</b><br/>
