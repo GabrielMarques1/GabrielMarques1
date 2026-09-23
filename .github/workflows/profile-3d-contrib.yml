@@ -1,0 +1,43 @@
+name: GitHub Profile 3D & Snake Animations
+
+on:
+  schedule:
+    # Executa todos os dias às 00:00 UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Generate 3D Contrib & Snake
+    steps:
+      - uses: actions/checkout@v3
+
+      # Gera os gráficos 3D isométricos de contribuição
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      # Gera a animação da Snake com os commits
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Faz commit e push das animações no branch main
+      - name: Commit & Push 3D Assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A .
+          git diff --staged --quiet || git commit -m "chore: atualiza gráficos 3d e animações de contribuição [skip ci]"
+          git push
