@@ -48,19 +48,6 @@ engineering:
 
 ---
 
-<div align="center">
-
-  <!-- 3D Trophies Section -->
-  <h3>🏆 Galeria 3D de Conquistas & Troféus GitHub</h3>
-
-  <img src="https://github-profile-trophy.vercel.app/?username=GabrielMarques1&theme=radical&no-frame=false&no-bg=true&margin-w=4&margin-h=4&column=7" alt="3D Trophies" />
-
-</div>
-
-<br/>
-
----
-
 ### 🛡️ Arsenal Técnico & Competências
 
 <div align="center">
